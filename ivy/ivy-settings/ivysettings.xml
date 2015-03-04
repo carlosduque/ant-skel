@@ -1,7 +1,7 @@
 <ivysettings>
   <properties file="${ivy.settings.dir}/ivysettings.properties"/>
   <settings defaultResolver="libraries" />
-  <caches defaultCacheDir="${ivy.settings.dir}/ivy-cache" />
+  <caches defaultCacheDir="${repository.dir}/ivy-cache" />
   <resolvers>
     <filesystem name="projects">
       <artifact pattern="${repository.dir}/[module]/[artifact]-[revision].[ext]" />
