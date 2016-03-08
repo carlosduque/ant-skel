@@ -15,6 +15,7 @@
     <property name="main.dir" value="${build.dir}/main" />
     <property name="main.classes.dir" value="${main.dir}/classes" />
     <property name="main.metainf.dir" location="${main.classes.dir}/META-INF" />
+    <property name="main.javadoc.dir" value="${build.dir}/javadoc" />
 
     <property name="main.conf.dir" value="src/main/resources" />
 
@@ -166,7 +167,7 @@
         <fail if="test.failed.flag">Tests failed. Check reports at: ${test.report.dir}</fail>
     </target>
 
-    <target name="default" depends="test" description="Run all the required targets to test and build the jar">
+    <target name="default" depends="clean,test" description="Run all the required targets to test and build the jar">
     </target>
 
 </project>
