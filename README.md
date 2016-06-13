@@ -1,3 +1,5 @@
-# ant-skel
+Skeletons for different applications
 
-different build files
+- java ant
+- ruby scripts, sinatra
+- etc
